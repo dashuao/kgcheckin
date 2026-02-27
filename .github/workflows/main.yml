@@ -3,12 +3,11 @@ on:
   workflow_dispatch:
   # push:
   schedule:
-    - cron: '59 14 * * *'   # 北京时间 22:59
-    - cron: '45 15 * * *'   # 北京时间 23:45
-    - cron: '50 15 * * *'   # 北京时间 23:50
     - cron: '55 15 * * *'   # 北京时间 23:55
     - cron: '58 15 * * *'   # 北京时间 23:58
+    - cron: '00 16 * * *'   # 北京时间 00:00
     - cron: '1 16 * * *'    # 北京时间 00:01
+    
 jobs:
   run:
     runs-on: ubuntu-latest
