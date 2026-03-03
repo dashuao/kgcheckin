@@ -3,9 +3,6 @@ on:
   workflow_dispatch:
   # push:
   schedule:
-    - cron: '55 15 * * *'   # 北京时间 23:55
-    - cron: '58 15 * * *'   # 北京时间 23:58
-    - cron: '00 16 * * *'   # 北京时间 00:00
     - cron: '1 16 * * *'    # 北京时间 00:01
     
 jobs:
